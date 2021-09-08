@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#password_generator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(50, 146, 211);
+    padding: 30px;
+    border-radius: 5px;
+}
+#password_generator input[type="text"], #password_generator button{
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid rgb(9, 50, 235);
+    background-color: rgb(118, 176, 223);
+
+}
+#password_generator button{
+    background-color: rgb(118, 223, 136);
+}
+#password_generator button:hover{
+    cursor: pointer;
+    background-color: rgb(44, 216, 73);
+}
+#display_password{
+    margin: 10px 0px;
+    width: 100%;
+    display: block;
+}
