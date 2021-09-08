@@ -9,11 +9,20 @@
 </head>
 <body>
     <div id="password_generator">
-        <input type="text" name="number_of_characters" id="number_of_characters" placeholder="Number of Characters">
+        <input type="number" name="number_of_characters" id="number_of_characters" placeholder="Number of Characters">
         <button onclick="generatePassword()">Generate password</button>
+        <div id="filters">
+            <h4>Filters</h4>
+            <section id="filter_options">
+                <input type="radio" name="password_char" onclick="selectOption(this.value)" checked value="letters_and_numbers"> Letters and numbers 
+                <br>
+                <input type="radio" name="password_char" onclick="selectOption(this.value)" value="only_letters"> Only letters 
+                <br>
+                <input type="radio" name="password_char" onclick="selectOption(this.value)" value="only_numbers"> Only numbers
+            </section>
+        </div>
         <input type="text" name="display_password" id="display_password" disabled placeholder="Your password">
     </div>
-    
 
     <script src="assets/js/script.js"></script>
 </body>
